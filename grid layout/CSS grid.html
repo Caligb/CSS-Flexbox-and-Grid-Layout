@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid</title>
+</head>
+<style>
+    main{
+        background-color: hsl(179, 100%, 13%);
+
+    }
+.grid-container{
+    display: grid;
+    gap: 10px;
+    background-color: #2196f3;
+    padding: 10px;
+
+}
+.grid-item{
+    background-color: rgba(255,255,255,0.8);
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+}
+.a{
+    background-color: red;
+    grid-column: 1/span 3;
+    grid-row: 1 / span 3 ;
+}
+.b{background-color: yellow;
+    grid-column: 4 /span 2;
+    grid-row: 1/span 3;
+}
+.c{
+    background-color: black;
+    grid-row:4 /span 6;
+    grid-column: 1/span 2;
+
+}
+.d{
+    background-color: blue;
+    grid-row: 5;
+    grid-column: 3/ span 3;
+}
+.e{
+    grid-row: 4 span ;
+    grid-column: 3/ span 3;
+}
+</style>
+<body>
+    <Main>
+        <div class="grid-container">
+            <div class=" grid-item a">a</div>
+            <div class="grid-item b">b</div>
+            <div class="grid-item c">c</div>
+            <div class="grid-item d">d</div>
+            <div class="grid-item e">e</div>
+        </div>
+
+    </Main>
+</body>
+</html>
